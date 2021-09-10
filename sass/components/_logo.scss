@@ -1,0 +1,299 @@
+ .logo-link{
+    @extend %text;
+
+  }
+
+ .flex-center{
+   display: flex;
+   position: relative;
+   
+   @media screen and (min-width: 768px) {
+    align-items: center;
+   justify-content: center;
+    
+   
+  }
+  }
+
+  .logo-link{
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    @media screen and (max-width: 767px) {
+      padding-top: 16px;
+      padding-bottom: 16px;
+      
+     
+    }
+    
+  }
+  
+  .logo-link__website{
+    color: $accent-color ;
+    font-family: Raleway;
+    font-weight: bold;
+   
+    letter-spacing: 0.03em;
+
+    @media screen and (max-width: 767px) {
+      font-size: 24px;
+      line-height: 1.16;
+     
+    }
+   
+    
+  }
+  
+  .logo-link{
+    color: $primary-text-color;
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+
+    @media screen and (max-width: 767px) {
+      font-size: 24px;
+      line-height: 1.16;
+      
+    }
+  }
+  .menu__box{
+    @media  (min-width: 320px)and (max-width: 479px){
+     bottom: none;
+      
+    }
+  }
+
+.menu-container {
+ 
+ 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+  padding: 48px 40px 48px 40px;
+  background-color: $hero-text-color;
+  transform: translateX(100%);
+  transition: $transition;
+  z-index: 999;
+ 
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+  }
+
+  .menu-toggle {
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+    position: absolute;
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-color: $hero-text-color;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    top: 10px;
+    right: 15px;
+    z-index: 999;
+   
+
+    &:hover,
+    &:focus{
+      fill: $accent-color;
+
+    }
+    @media screen and (min-width: 768px) {
+      display: none;
+      
+    }
+  }
+ 
+
+.menu-container .menu-toggle {
+ position: absolute;
+ top: 10px;
+ right: 15px;
+ color: $hero-text-color;
+
+
+}
+
+.mobile-menu{
+  @extend %list;
+
+}
+
+
+.menu-toggle .menu-toggle__menu {
+  display: none;
+  overflow: scroll;
+}
+.menu-toggle.js-open-menu .menu-toggle__menu {
+  display: block;
+}
+.menu-toggle.js-open-menu .menu-toggle__close {
+  display: none;
+}
+
+.menu-toggle__title{
+  
+  display: block;
+  font-weight: 500;
+  list-style: none;
+  justify-content: space-between;
+  @extend %list;
+  
+  
+}
+.menu-toggle__list{
+  margin-bottom: 32px;
+  &:last-child{
+    margin-bottom: 0px;
+  }
+}
+
+.menu-toggle__link.current{
+  color: $button-text-color;
+}
+
+.menu-toggle__link{
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 40px;
+  line-height:1.17;
+  letter-spacing: 0.02em;
+  color: $title-text-color;
+  @extend %text;
+  &:hover,
+  &:focus{
+    color: $button-text-color;
+  }
+}
+
+.auth-mobile {
+  position: absolute;
+  bottom: 134px;
+  @extend %list;
+}
+.auth-mobile__item{
+margin-bottom: 32px;
+  &:last-child{
+    margin-bottom: 0px;
+  }
+}
+
+.auth-mobile__link{
+
+  
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  text-align: center;
+  @extend %text;
+  color:  $accent-color;
+  list-style: none;
+  bottom: 32px;
+
+   &:hover,
+   &:focus{
+  
+   color: $feature-text-color;
+
+  }
+
+}
+.auth-mobile__mailto{
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  @extend %text;
+  color: $feature-text-color;
+  list-style: none;
+
+   &:hover,
+   &:focus{
+   color:  $accent-color;
+
+  }
+}
+
+
+.social__box{
+ position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  bottom: 48px;
+  
+}
+.social__link{
+  font-size: 18px;
+ line-height: 1.22;
+ letter-spacing: 0.02em;
+ color:  $accent-color;
+ @extend %text;
+   &:hover,
+   &:focus{
+   
+   color: $feature-text-color;
+
+  }
+ 
+}
+.social__item{
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-right: 10px;
+  padding-left: 10px;
+  
+  &:first-child{
+    padding-left: 0px;
+  }
+  
+  &:last-child{
+    border-right: none;
+  }
+
+ padding-right: 10px;
+  &:last-child {
+  
+   padding-right: 0px;
+  }
+}
+.social__link:not(:last-child) {
+ padding-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+  

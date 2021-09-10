@@ -1,0 +1,120 @@
+
+.section{
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+   @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}   
+   .section__list{
+     
+     padding-top: 0;
+     padding-bottom: 0;
+
+     @media (min-width: 768px) and (max-width: 1199px) {
+      display: flex; 
+      flex-wrap: wrap;
+      margin: -15px;
+    }
+    @media (min-width: 1200px) {
+      display: flex; 
+      
+    }
+   }
+   
+   .section__one {
+    margin-bottom: 30px;
+
+    @media (min-width: 768px) and (max-width: 1199px) {
+      flex-basis: calc((100% - 4 * 15px) / 2);
+      margin: 15px;
+
+    }
+      @media screen and (min-width: 1200px) {
+        &:not(:last-child){
+         margin-right: 30px;
+        } 
+     
+      }
+    
+    }
+   
+   .section__five{
+    
+     margin-bottom: 30px;
+     height: 120px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background: $fon-text-color;
+      border-radius: 4px;
+
+      @media screen and (max-width: 767px) {
+       text-align: center;
+       width: 100%;
+        display: flex;
+        margin-right: 0px;
+      }
+
+      @media  (min-width: 767px) and (max-width: 1200px){
+        width: 354px;
+       
+        display: flex;
+        text-align: center;
+      }
+      @media screen and (min-width: 1200px) {
+        width: 270px;
+        display: flex;
+      } 
+   }
+   
+   .section__title{
+     margin-bottom: 10px;
+     color: $title-text-color ;
+     font-family: Roboto;
+     font-weight: bold;
+     font-size: 14px;
+     line-height: 1.14;
+     letter-spacing: 0.03em;
+     text-transform: uppercase;
+
+     @media screen and (max-width: 767px) {
+      text-align: center;
+     
+     }
+   } 
+   
+   .section__feature{
+    margin-top: 0;
+    margin-bottom: 0;
+    color: $feature-text-color;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+   
+    @media screen and (max-width: 767px) {
+      width:100%;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1200px){
+      width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
+   }
+   
+   .section__list{
+     @extend %list;
+   }
+   .section__icon{
+    align-content: center;
+   
+    @media screen and (max-width: 768px) {
+      margin-top: 25px;
+      margin-bottom: 25px;
+      
+    }
+   }

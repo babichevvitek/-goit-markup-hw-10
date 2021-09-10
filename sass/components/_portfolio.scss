@@ -1,0 +1,295 @@
+ 
+ 
+
+   .text{
+       @extend %visually-hidden
+   }
+
+   .page-header {                                                                                       
+     border-bottom: 1px solid #ECECEC;
+   } 
+   
+   .poster{
+     padding-top: 94px;
+     padding-bottom: 94px;
+
+      @media screen and (max-width: 767px) {
+       padding-top: 60px;
+       padding-bottom: 60px;
+      }
+   
+    }
+   
+   .site__buttons{
+     position: relative;
+     border-radius: 4px;
+     text-align: center;
+     padding: 6px 22px;
+     border-color: transparent;
+     color: $title-text-color;
+     font-family: Roboto;
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 1.85;
+     cursor: pointer;
+     letter-spacing: 0.03em;
+     transition: color $transition, background-color $transition, box-shadow $transition;
+    
+      &:hover,
+      &:focus{
+        color: $hero-text-color;
+        background-color: $accent-color ;
+        box-shadow: $site;
+        transform: translateY(0);
+        opacity: 1;
+      }
+    
+    }
+   
+   .all{
+     color: $hero-text-color;
+     background-color: $accent-color;
+    }
+   
+   .site{
+     display: flex;
+     margin-top: 0;
+     margin-bottom: 50px;
+     @extend %list;
+
+     @media screen and (max-width: 767px) {
+       margin-bottom: 40px;
+       flex-wrap: wrap;
+     }
+
+     @media screen and (min-width: 768px) {
+       justify-content: center;
+     }
+
+     @media   (min-width: 768px) and (max-width: 1199px) {
+       margin-bottom: 30px;
+     }
+    }
+   
+
+   .site__two{
+     margin-left: 8px;
+
+    
+     @media screen and (max-width: 767px) {
+       margin-bottom: 15px;
+       &:nth-child(n + 4) {
+         margin-bottom: 0px;
+       }
+       &:nth-child(4) {
+         margin-left: 0px;
+       }
+
+      } 
+      
+     
+  
+     &:first-child{ 
+       margin-left: 0;
+     }
+
+    }
+   
+
+
+
+
+
+
+
+   .pictures{
+     
+      display: flex;
+      flex-wrap: wrap;
+
+      @media  (min-width: 768px) and (max-width: 1199px) {
+        display: flex; 
+        flex-wrap: wrap;
+        margin: -15px;
+      }
+      @media (min-width: 1200px) {
+        display: flex; 
+      
+      }
+    }
+
+   .portfolio {
+    @extend %list;
+
+    @media screen and (min-width: 1200px) {
+     
+    
+      &:nth-child(n + 7){
+        margin-bottom: 0;
+      }
+
+      &:nth-child(-n + 3){
+        margin-top: 0;
+      }
+
+     &:nth-child(3n){
+       margin-right: 0;
+      }
+    }
+
+   }
+    .portfolio{
+   
+
+      @media screen and (max-width: 767px) {
+       width: 450px;
+       
+       margin-right: 0px;
+       margin-bottom: 30px;
+       &:last-child{
+         margin-bottom: 0px; 
+       }
+      } 
+
+      @media (min-width: 768px) and (max-width: 1199px) {
+       flex-basis: calc((100% - 4 * 15px) / 2);
+       margin: 15px;
+
+      } 
+
+      @media screen and (min-width: 1200px) {
+        margin-right: 30px;
+        margin-bottom: 30px;
+        box-sizing: border-box;
+        width: 370px;
+      }
+    
+    }
+
+   .portfolio__sites{
+     @extend %text;
+     position: relative;
+     transition: box-shadow $transition;
+     display: block;
+     height: 100%;
+   
+       &:hover,
+       &:focus{
+        box-shadow: $shades;
+      }
+      @media (min-width: 767px) and (max-width: 1199px){
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      
+       }
+
+    }
+    
+    img {
+      display: block;
+      width: 100%;
+      height: auto; 
+     object-fit: cover; 
+
+    } 
+   
+   .signature{
+     padding-top: 20px;
+     padding-bottom: 20px;
+     padding-left: 24px;
+     padding-right: 24px;
+     border-right: 1px solid #EEEEEE;
+     border-bottom: 1px solid #EEEEEE;
+     border-left: 1px solid #EEEEEE;
+     
+     @media (min-width: 767px) and (max-width: 1199px){
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      
+     }
+   }
+   
+   
+   
+    
+  
+   
+   
+   
+   
+   
+   .signature__decoration{
+     margin-top: 0;
+     margin-bottom: 4px;
+     color: $title-text-color;
+     font-family: Roboto;
+     font-weight: bold;
+     font-size: 18px;
+     line-height: 2;
+    letter-spacing: 0.06em;
+   }
+   
+   .signature__text{
+     color: $feature-text-color;
+     font-family: Roboto;
+     font-size: 16px;
+     line-height: 1.87;
+     letter-spacing: 0.03em;
+   }
+   
+   .portfolio__thumb{
+     position: relative;
+     overflow: hidden;
+
+    
+
+    }
+   
+    .portfolio__overlay{
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     margin: 0;
+     transform: translateY(101%);
+     transition: transform $transition;
+     background: rgba(33, 150, 243, 0.9);
+
+      
+    }
+
+    .portfolio__sites:hover .portfolio__overlay,
+    .portfolio__sites:focus .portfolio__overlay{
+     transform: translateY(0);
+     opacity: 1;
+    }
+   
+    .portfolio__paragraph {
+      position: absolute;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      width: 100%;
+      height: 100%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 63px 24px;
+      font-size: 18px;
+      line-height: 1.55;
+      color: $hero-text-color;
+      letter-spacing: 0.03em;
+      @media screen and (max-width: 450px) {
+        padding: 49px 24px;
+      }
+
+
+    }
+     
+ 
+     
+  
+  
