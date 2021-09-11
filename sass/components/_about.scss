@@ -1,3 +1,9 @@
+img {
+ display: block; 
+ width: 100%;
+ height: auto;
+}
+
 .mabe{
   
     margin-left: auto;
@@ -6,15 +12,26 @@
     background: #FFF5F6;
 
     @media   (min-width: 768px){
-        padding-top: 130px;
+        padding-top: 85px;
         width:100%;
     }
     @media   (min-width: 1280px){
         padding-top: 125px;
         width:100%;
     }
-
+    @media   (min-width: 1280px){
+        display: flex;
+        background-image: url(../images3/bg3.png);    
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: bottom;
+       
+       
+    }
+   
 }
+
+
 .mabe__tradition{
     font-family: Titan One;
     font-size: 18px;
@@ -26,15 +43,20 @@
 
     @media  (min-width: 768px){
         font-size: 26px;
-        line-height: 30px;
+        line-height: 1.15;
     }
     @media  (min-width: 1280px){
         font-size: 30px;
-        line-height: 34px;
+        line-height: 1.13;
     } 
+
 }
 
+
 .mabe__text{
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
     font-family: Titan One;
     font-size: 34px;
     line-height: 1.14;
@@ -45,49 +67,58 @@
     margin-bottom: 25px;
 
     @media  (min-width: 768px){
+        width: 429px;
         font-size: 48px;
-        line-height: 55px;
+        line-height: 1.14;
         margin-bottom: 50px;
     }
 
     @media  (min-width: 1280px){
+        width: 534px;
         font-size: 58px;
-        line-height: 66px;
+        line-height: 1.13;
         margin-bottom: 55px;
     }
+
 
 }
 
 
 .mabe__img {
-    display: block;
-    width: 280px;
-    height: auto; 
-   object-fit: cover; 
+   margin-left: auto;
+   margin-right: auto; 
+   object-fit: cover;
+   width: 280px;
+   height: 279px;
 
    @media  (min-width: 768px){
-      width: 340px;
+     width: 340px;
+     height: 339px;
+   }
+   @media  (min-width: 1280px){
+     width: 516px;
+     height: 516px;
     }
-    @media  (min-width: 1280px){
-        width: 516px;
-      }
-  } 
+   
+  }
 
-  .mabe__box{
+  
+.mabe__box{
     position: relative;
-    margin-bottom: 17px;
     display: block;
 
     @media   (min-width: 768px){
        margin-left: 17px;
-       margin-bottom: 62px;
+       padding-top: 50px;
     }
-    @media   (min-width: 768px){
-        margin-left: 74px;
-        margin-bottom: 45px;
-     }
-}
 
+    @media   (min-width: 1280px){
+        margin-left: 74px;
+        margin-bottom: 0px;
+        padding-top: 50px;
+    }
+
+}
 
 .mabe__title{
   
@@ -110,15 +141,16 @@
    
     } 
     @media  (min-width: 1280px){
-         font-size: 16px;
-         line-height: 176%;
-         margin-bottom: 35px;
-         padding-left: 0px;
-         padding-right: 0px;
+     font-size: 16px;
+     line-height: 176%;
+     margin-bottom: 35px;
+     padding-left: 0px;
+     padding-right: 0px;
       
-       } 
+    } 
    
 }
+
 .mabe__list{
    
     font-family: DM Sans;
@@ -129,6 +161,7 @@
     color: #907E82;
     padding-left: 30px;
     padding-right: 30px;
+    margin-bottom: 12px;
    
     @media  (min-width: 768px){
       font-size: 14px;
@@ -144,15 +177,16 @@
        padding-left: 0px;
        padding-right: 16px;
       
-      } 
+    } 
 }
 .mabe__love{
     @media   (min-width: 768px){
         display: flex;
     } 
+
 }
 .mabe__cow{
-    margin-bottom: 26px;
+    margin-bottom: 46px;
     @media  (min-width: 768px){
         margin-bottom: 0px;
     }
@@ -164,12 +198,20 @@
     height: 133px;
     bottom: 0px;
     left: -20px;
-    @media  (min-width: 768px){
-       max-width: 320px;
+
+    @media  (min-width: 320px){
+       display: none;
     } 
 
-    @media  (min-width: 768px){
-      display: none;
+    @media  (min-width: 1280px){
+     display: none;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+   
+      width: 1282px;
+      height: 534px;
+     
     } 
 }
 .mabe__accumsan{
@@ -181,42 +223,59 @@
     color: #907E82; 
     padding-left: 30px;
     padding-right: 30px;
-    margin-top: 12px;
+    margin-bottom: 17px;
 
     @media  (min-width: 768px){
         font-size: 14px;
        line-height: 176%;
        padding-left: 0px;
-     }
+       margin-bottom: 62px;
+    }
+    @media  (min-width: 1280px){
+        font-size: 14px;
+       line-height: 194%;
+       padding-left: 0px;
+       margin-bottom: 45px;
+    } 
+
 }
 
-.mabe__button{
+.mabe__button{   
+   
     font-family: DM Sans;
     font-style: normal;
     font-weight: bold;
-    font-size: 14px;
-    line-height: 18px;
-    align-items: center;
-    justify-content: center;
+    font-size: 16px;
+    line-height: 1.3125;
     color: #D41443; 
-    width: 176px;
-    height: 44px;
     background: #FFFFFF;
     border-radius: 22px;
     border: none;
     cursor: pointer;
-    margin-left: 30px;
-   
+    margin-left: 30px;  
+    width: 176px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover{
+       background-color: #FFFFFF;
+
+    }
+
     @media   (min-width: 768px){
-        margin-left: 396px;
-     } 
+        margin-left: 0px; 
+    } 
  
 }
-.mabe__icon{
-    width: 4.43px;
-    height: 8px;
-    left: 183.62px;
-    fill: #D41443;;
-    
-     
+.mabe__more{
+    margin-right: 14px;
+}
+.mabe__vector{
+   
+    display: block;
+    width: 5px;
+    height: 17px; 
+    color: #D41443;
 }
